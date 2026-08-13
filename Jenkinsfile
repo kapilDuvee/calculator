@@ -9,5 +9,11 @@ pipeline {
             }
         }
 
+        stage('Test') {
+            steps {
+                bat '.\\mvnw.cmd test'
+            }
+        }
+
     }
 }
