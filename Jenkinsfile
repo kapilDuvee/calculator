@@ -15,5 +15,11 @@ pipeline {
             }
         }
 
+        stage('Docker Build') {
+             steps {
+                  bat 'docker build -t calculator-app:latest .'
+              }
+        }
+
     }
 }
